@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #d5ad5c;
+    color: #000000;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    color: #5e1f00;
+    font-size: 40px;
+}
+header{
+    background-color: #fffcc4;
+    color: #000000;
+    padding: 30px;
+    text-align: center;
+}
+main{
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#book-form{
+    background-color: #fffcc4;
+    padding: 40px;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: inherit;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: inherit ;
+}
+button{
+    background-color: #5e1f00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #a9472d;
+}
+#book-list-section{
+    background-color: #fffcc4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#search-books,
+#sort-books{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: inherit;
+}
+h2{
+    color: #5e1f00;
+    margin-bottom: 20px;
+}
+#empty-message{
+    text-align: center;
+    color: #77733c;
+    padding: 20px;
+}
+@media (max-width:600px){
+    header{
+        padding: 20px 10px;
+    }
+    h1{
+        font-size: 30px;        
+    }
+    main{
+        padding: 10px;    
+    }
+    #book-form,
+    #book-list-section{
+    padding:15px;
+    }
+}
+
+

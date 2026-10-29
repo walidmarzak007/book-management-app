@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my book library</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>my book library</h1>
+        <p>organize your personal book collection</p>
+    </header>
+
+    <main>
+        <section id="book-form-section">
+        <h2>add a book</h2>
+
+        <form id="book-form" novalidate>
+            <label for="title">book title</label>
+            <input type="text" id="title" name="title" required >
+
+            <label for="author">author</label>
+            <input type="text" name="author" id="author" required>
+
+            <label for="year">publication year</label>
+            <input type="number" id="year" name="year">
+
+            <label for="genre">genre</label>
+            <input type="text" id="genre" placeholder="enter book genre">
+ 
+            <label for="description">description</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="status">reading status</label>
+            <select id="status" name="status">
+                <option value="to-read" >to read</option>
+                <option value="reading" >reading</option>
+                <option value="read" >read</option>
+            </select>
+                <button type="submit">add book</button>
+
+            </form>
+        </section>
+
+        <section id="book-list-section">
+            <h2>my books</h2>
+        <input type= "text" id="search-books" placeholder="search by title or author">
+        <select id="sort-books" name="sort-books">
+                 <option value="title">title</option>
+                 <option value="author">author</option>
+                 <option value="year">year</option>     
+                 </select>        
+                <div id="book-list"></div>
+                <p id="empty-message"> no books yet. add your first book!</p>
+        </section>
+    </main>
+    
+</body>
+</html>
